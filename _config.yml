@@ -1,0 +1,34 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+title: Portfolio - Graficos.net | Paul Melero Monagas - Web developer Zaragoza
+description: Paul Melero Monagas - Web Dev. Zaragoza. Diseño Web. Mis últimos trabajos en temas de diseño y desarrollo web.
+keywords: webdev, diseño web, desarrollo web
+author: Graficos.NET
+
+baseurl: "/portfolio/" # the subpath of your site, e.g. /blog/
+url: "graficos.net" # the base hostname & protocol for your site
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+
+# Build settings
+markdown: kramdown
+
+# Assets
+sass:
+    sass_dir: _sass
+    style: compressed
+    # sourcemap: true # Not supported
+
+# Custom paths and defined colections
+#collections:
+#  posts:
+#    output: true
+#    permalink: :title/
