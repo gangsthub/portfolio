@@ -12,7 +12,7 @@ description: Paul Melero Monagas - Web Dev. Zaragoza. Diseño Web. Mis últimos 
 keywords: webdev, diseño web, desarrollo web
 author: Graficos.NET
 
-baseurl: "/portfolio/" # the subpath of your site, e.g. /blog/
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
 url: "graficos.net" # the base hostname & protocol for your site
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
