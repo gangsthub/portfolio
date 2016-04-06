@@ -1,6 +1,6 @@
 # Jekyll Portfolio
 
-Based on the awesome template by [inded](https://github.com/inded/) "Modern Blog".
+Based on the awesome template by [inded](https://github.com/inded/), "Modern Blog".
 
 Usign some gulp magic. Thanks to https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/.
 
