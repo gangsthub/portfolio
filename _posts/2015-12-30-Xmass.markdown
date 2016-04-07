@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Xmass Animation"
+subtitle: Xmass made at TheNodeHub
+author: The NodeHub
+siteUrl: http://navidad2015.thenodehub.com/
+avatar: thenodehub-57x57.png
+image: xmass.png
+tools: [gulp, postCSS, TweenMax]
+date:   2015-12-30 00:06:52 +0200
+categories: works-made-at-TheNodeHUb
+---
+
+The funiest thing I made at The NodeHub was this *xmass*.
+
+This work was made at The Nodehub, were I was working since Apr 2015 until Apr 2016.
+
+My tasks here were:
+
+* To Draw the charcters (and prepare all the assets) based on "Adventure Times" TV Show.
+
+* Animate the whole sequence using the amazing lib *TweenMax* for JS animations.
