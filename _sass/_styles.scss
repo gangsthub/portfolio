@@ -129,6 +129,10 @@
 	padding: 25px 30px 100px;
 	color: #3b393d;
 
+	p a {
+		color: $brand-color;
+	}
+
 	p:first-of-type {
 		font-size: 1.5em;
 		padding: 0 0 1em 0;
