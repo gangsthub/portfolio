@@ -43,7 +43,7 @@ var demo = (function (window) {
     var layout = {};
 
     /**
-     * Initialise demo.
+     * Initialise Trianglify.
      */
     var init = function () {
 

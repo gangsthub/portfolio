@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Yellowsky"
+title:  "\"Yellowsky Transport\" Design"
 subtitle: Man and Van delivery service in London.
 author: The NodeHub
 siteUrl: http://yellowskytransport.com
 avatar: thenodehub-57x57.png
-image: yellowsky-header.png
+image: Untitled.png
 tools: [gulp, postCSS, susy]
 date:   2016-03-30 00:06:52 +0200
 categories: works-made-at-TheNodeHUb

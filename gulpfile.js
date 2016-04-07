@@ -16,7 +16,7 @@ var gulp            = require('gulp'),
 * Vars
 */
 
-var jekyll   = process.platform === 'jekyll';
+var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -37,9 +37,9 @@ var paths    = {
  */
 
 gulp.task('jekyll-build', function (done) {
-  browserSync.notify(messages.jekyllBuild);
-  return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-    .on('close', done);
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+        .on('close', done);
 });
 
 

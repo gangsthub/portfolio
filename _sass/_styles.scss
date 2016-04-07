@@ -39,7 +39,6 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	transform: translateY(10%);
 }
 
 .card__container--closed .card__image {
@@ -61,15 +60,17 @@
 	margin-top: 40vh;
 	padding: 30px 40px 22px;
 	background: #fff;
+	z-index: 1;
+
+	@media all and (max-width: 50em) {
+		margin-top: 20vh;
+	}
+
+	@media all and (max-width: 30em) {
+		margin-top: 10vh;
+	}
 }
 
-@include media-query($on-laptop) {
-	margin-top: 20vh;
-}
-
-@include media-query($on-palm) {
-	margin-top: 10vh;
-}
 
 .card__container--closed .card__content {
 	margin-top: 0;
@@ -85,11 +86,25 @@
 	padding: 35px 30px 0px;
 }
 
-.card__container--closed .card__caption {
-	font-size: 1em;
-	max-width: auto;
-	padding: 10px 10px 25px;
-	transform: translateY(0);
+.card__container--closed {
+	.card__caption {
+		font-size: 1em;
+		max-width: auto;
+		padding: 10px 10px 25px;
+		transform: translateY(-20%);
+	}
+
+	.card__title,
+	.card__subtitle {
+		text-shadow: 0 0 5px rgba(white, .8);
+	}
+
+	.card__subtitle {
+	    max-height: 2em;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+	}
+
 }
 
 .card__title {
@@ -99,19 +114,12 @@
 	color: #3b393d;
 }
 
-.card__container--closed .card__title {
-	color: #fff;
-}
 
 .card__subtitle {
 	font-size: .95em;
 	line-height: 1;
 	margin: 5px 0 0;
 	color: #777778;
-}
-
-.card__container--closed .card__subtitle {
-	color: #f5f5f5;
 }
 
 .card__copy {
@@ -140,6 +148,12 @@
 	}
 
 }
+
+.card__visit a {
+	color: $brand-color;
+}
+
+
 .card__btn-close {
 	font-size: 18px;
 	position: absolute;
@@ -264,7 +278,7 @@ a:focus {
 }
 
 .body {
-	background: #50B6B9;
+	background: $brand-color;
 }
 
 .body a {
@@ -302,12 +316,6 @@ a:focus {
 	display: block;
 	padding: .5em 0 1em;
 	color: #999;
-}
-
-///* Footer Navigation Style */
-
-footer {
-	text-align: center;
 }
 
 .links {
@@ -350,7 +358,6 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
 	background: no-repeat center center / cover;
 }
 
@@ -366,7 +373,6 @@ footer {
 .pattern svg {
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
 }
 
 .polygon {

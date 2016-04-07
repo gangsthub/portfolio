@@ -19,9 +19,11 @@ layout: compress
     <script type="text/javascript" src="js/vendors/html5.min.js"></script>
     <![endif]-->
     <script>
+        var root = document.getElementsByTagName('html')[0];
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            var root = document.getElementsByTagName('html')[0];
             root.setAttribute('class', 'ff');
+        } else if (navigator.userAgent.toLowerCase().indexOf('MSIE') > -1) {
+            root.setAttribute('class', 'ie');
         }
     </script>
 </head>
