@@ -4,9 +4,9 @@ I pretend to show some works made by myself and workingg with some others.
 
 You can see it here:
 
-## [Site](http://graficos.NET/portfolio)
+### [Site](http://graficos.NET/portfolio)
 
-# Tools used
+## Tools used
 
 Based on the awesome template by [inded](https://github.com/inded/), "Modern Blog", wich is based on a codrops article.
 
