@@ -90,12 +90,23 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.sass, ['sass'])
     .on('change', function(event) {
-    var absPath = event.path;
-    var relPath = path.basename(absPath);
-    console.log(gutil.colors.yellow('CSS ') + relPath + ' was ' + gutil.colors.magenta(event.type) + ', running tasks...');
+      var absPath = event.path;
+      var relPath = path.basename(absPath);
+      console.log(gutil.colors.yellow('CSS ') + relPath + ' was ' + gutil.colors.magenta(event.type) + ', running tasks...');
   });
 
-  gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch([
+      '*.html',
+      '_layouts/*.html',
+      '_posts/*',
+      'js/*.js'
+      ], ['jekyll-rebuild'])
+    .on('change', function(event) {
+      var absPath = event.path;
+      var relPath = path.basename(absPath);
+      console.log(gutil.colors.yellow('File ') + relPath + ' were ' + gutil.colors.magenta(event.type) + ', running tasks...');
+  });
+
 });
 
 
