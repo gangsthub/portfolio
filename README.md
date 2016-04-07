@@ -6,14 +6,16 @@ You can see it here:
 
 ## [Site](http://graficos.NET/portfolio)
 
-Based on the awesome template by [inded](https://github.com/inded/), "Modern Blog".
+# Tools used
+
+Based on the awesome template by [inded](https://github.com/inded/), "Modern Blog", wich is based on a codrops article.
 
 Usign some gulp magic. Thanks to https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/.
+
+I added to the gulpfile some utils and pretend to add some *postCSS* plugins.
 
 
 ## License
 
-Based off of this [Article on Codrops](http://tympanus.net/codrops/?p=24222)
-
-Created by Claudio Calautti for Codrops. Released under the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html).
+[GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html).
 
