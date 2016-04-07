@@ -16,13 +16,13 @@ var gulp            = require('gulp'),
 * Vars
 */
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+var jekyll   = process.platform === 'jekyll';
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-var paths = {
+var paths    = {
   "sass": [
     '_sass/*.scss'
   ],
@@ -94,6 +94,7 @@ gulp.task('watch', function () {
     var relPath = path.basename(absPath);
     console.log(gutil.colors.yellow('CSS ') + relPath + ' was ' + gutil.colors.magenta(event.type) + ', running tasks...');
   });
+
   gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
