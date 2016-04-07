@@ -30,6 +30,11 @@ layout: compress
     <header class="header">
         <h1>Graficos.NET - Portfolio<span>Little showcase of recent works made by Paul Melero.</span></h1>
         <p>Front-End Developer based in Zaragoza</p>
+        <nav class="links">
+            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="#"><i class="fa fa-github fa-3x"></i></a>
+            <a href="#"><i class="fa fa-codepen fa-3x"></i></a>
+        </nav>
     </header>
     <div class="content">
         <!-- trianglify pattern container -->
@@ -63,6 +68,13 @@ layout: compress
                                 <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
                             </div>
                             {{ post.content }}
+                            <div class="card__tools">
+                                <ul>
+                                    {% for item in post.tools %}
+                                        <li class="post-tools__item">{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,13 +84,6 @@ layout: compress
         </div>
     </div>
     <!-- /container -->
-    <footer>
-        <nav class="links">
-            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
-            <a href="#"><i class="fa fa-github fa-3x"></i></a>
-            <a href="#"><i class="fa fa-codepen fa-3x"></i></a>
-        </nav>
-    </footer>
 </div>
 <!-- JS -->
 <script src="js/vendors/trianglify.min.js"></script>
