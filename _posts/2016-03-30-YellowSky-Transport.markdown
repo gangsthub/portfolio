@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "\"Yellowsky Transport\" Design"
-subtitle: Man and Van delivery service in London.
+subtitle: UI design, layout and Twig templates.
 author: The NodeHub
 siteUrl: http://yellowskytransport.com
 avatar: thenodehub-57x57.png
 image: Untitled.png
-tools: [gulp, postCSS, susy]
+tools: [GulpJS, postCSS, susy, Twig, Synfony]
 date:   2016-03-30 00:06:52 +0200
 categories: works-made-at-TheNodeHUb
 ---

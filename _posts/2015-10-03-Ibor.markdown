@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Ibor"
+subtitle: Drupal site with custom design
+author: The NodeHub
+siteUrl: http://www.ibor.net/
+avatar: thenodehub-57x57.png
+image: ibor-res-1920.jpg
+tools: [GruntJS, SCSS, autoprefixer]
+date:   2015-10-03 00:06:52 +0200
+categories: works-made-at-TheNodeHUb
+---
+
+This is the type of work I usually made at The Nodehub, were I was working since Apr 2015 until Apr 2016. Given a custom design, style a Drupal site. Mainly CSS (SASS), but also JS. And sometimes, some Drupal modules editing.
+
+My tasks here were:
+
+* Styling a given design, made by a design studio called <a href="http://detalier.com/" rel="nofollow" target="blank_">Detalier</a>.
+
+* Cross-Browser respoonvie testing.
+
+I would highligt a copue of things about this website:
+
+* Fortunately, I had a good design from start, wich is really appreciated. Based on **grids**. And I had good relationship with the designers, who also had some web dev knowledge, so we could understand each other.
+
+* I tried to apply here the best performance techniques doing this design. I would mark as a milestone the **2-levels responsive menu**. I used some <a href="https://twitter.com/aerotwist" target="blank_">Paul Lewis</a> animation advices there.
+
+

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Xmass Animation"
-subtitle: Xmass made at TheNodeHub
+subtitle: Xmass animation made with GSAP
 author: The NodeHub
 siteUrl: http://navidad2015.thenodehub.com/
 avatar: thenodehub-57x57.png
 image: xmass.png
-tools: [gulp, postCSS, TweenMax]
+tools: [GulpJS, postCSS, TweenMax]
 date:   2015-12-30 00:06:52 +0200
 categories: works-made-at-TheNodeHUb
 ---
