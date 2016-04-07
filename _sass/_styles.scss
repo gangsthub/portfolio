@@ -24,6 +24,12 @@
 .card__container--closed {
 	position: absolute;
 	overflow: hidden;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 6px;
+
+	.card__image {
+		height: 70%;
+	}
 }
 
 .card__image {
@@ -33,6 +39,7 @@
 	display: block;
 	width: 100%;
 	height: 100%;
+	transform: translateY(10%);
 }
 
 .card__container--closed .card__image {
@@ -51,8 +58,17 @@
 	max-width: 800px;
 	height: auto;
 	margin: 400px auto 60px;
+	margin-top: 40vh;
 	padding: 30px 40px 22px;
 	background: #fff;
+}
+
+@include media-query($on-laptop) {
+	margin-top: 20vh;
+}
+
+@include media-query($on-palm) {
+	margin-top: 10vh;
 }
 
 .card__container--closed .card__content {
@@ -73,9 +89,7 @@
 	font-size: 1em;
 	max-width: auto;
 	padding: 10px 10px 25px;
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
+	transform: translateY(0);
 }
 
 .card__title {
@@ -117,6 +131,14 @@
 		padding-bottom: 0.3em;
 	}
 
+	.img {
+		text-align: center;
+
+		img {
+			margin: auto;
+		}
+	}
+
 }
 .card__btn-close {
 	font-size: 18px;
@@ -136,8 +158,6 @@
 	display: -webkit-flex;
 	display: flex;
 	padding: 0 0 35px 0;
-
-	-webkit-align-items: center;
 	align-items: center;
 }
 
@@ -229,7 +249,6 @@ body.body--hidden .header {
 }
 
 .header{
-	-webkit-transition: opacity 300ms ease-in-out;
 	transition: opacity 300ms ease-in-out;
 }
 
@@ -245,7 +264,7 @@ a:focus {
 }
 
 .body {
-	background: #acaad1;
+	background: #50B6B9;
 }
 
 .body a {
@@ -309,7 +328,7 @@ footer {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 50em) {
+@include media-query($on-laptop) {
 	.header {
 		padding: 3em 10% 4em;
 	}
@@ -331,6 +350,7 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 	background: no-repeat center center / cover;
 }
 
@@ -346,27 +366,22 @@ footer {
 .pattern svg {
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 }
 
 .polygon {
-	transition: -webkit-transform 300ms ease-in-out,
-				opacity 300ms ease-in-out;
 	transition: transform 300ms ease-in-out,
 				opacity 300ms ease-in-out;
-	-webkit-transform: scale(1);
 	transform: scale(1);
-	-webkit-transform-origin: center bottom;
 	transform-origin: center bottom;
 }
 
 .polygon--hidden {
 	opacity: 0;
-	-webkit-transform: scale(0);
 	transform: scale(0);
 }
 ///* disable scale on firefox */
 
 .ff .polygon {
-	-webkit-transform: scale(1)!important;
 	transform: scale(1)!important;
 }

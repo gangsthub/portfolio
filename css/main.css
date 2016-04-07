@@ -119,7 +119,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     .wrapper {
       max-width: calc(800px - (30px));
       padding-right: 15px;
@@ -173,7 +173,7 @@ pre {
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 30em) {
     .site-nav {
       position: absolute;
       top: 9px;
@@ -243,14 +243,14 @@ pre {
 .footer-col-3 {
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
   .footer-col-1,
   .footer-col-2 {
     width: calc(50% - (30px / 2)); }
   .footer-col-3 {
     width: calc(100% - (30px / 2)); } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 30em) {
   .footer-col {
     float: none;
     width: calc(100% - (30px / 2)); } }
@@ -288,7 +288,7 @@ pre {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     .post-title {
       font-size: 36px; } }
 
@@ -296,17 +296,17 @@ pre {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h4 {
         font-size: 18px; } }
 
@@ -472,7 +472,11 @@ pre {
 
 .card__container--closed {
   position: absolute;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px; }
+  .card__container--closed .card__image {
+    height: 70%; }
 
 .card__image {
   position: absolute;
@@ -480,7 +484,9 @@ pre {
   left: 0;
   display: block;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%); }
 
 .card__container--closed .card__image {
   position: relative;
@@ -514,8 +520,8 @@ pre {
   font-size: 1em;
   max-width: auto;
   padding: 10px 10px 25px;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%); }
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
 
 .card__title {
   font-size: 1.5em;
@@ -547,6 +553,10 @@ pre {
   .card__copy li p:first-of-type {
     font-size: 1em;
     padding-bottom: 0.3em; }
+  .card__copy .img {
+    text-align: center; }
+    .card__copy .img img {
+      margin: auto; }
 
 .card__btn-close {
   font-size: 18px;
@@ -646,7 +656,7 @@ a:focus {
   color: #3b393d; }
 
 .body {
-  background: #acaad1; }
+  background: #50B6B9; }
 
 .body a {
   color: #4f4c4c; }
@@ -709,6 +719,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   background: no-repeat center center / cover; }
 
 .pattern--hidden {
@@ -720,21 +731,22 @@ footer {
 
 .pattern svg {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  max-width: 100%; }
 
 .polygon {
   transition: -webkit-transform 300ms ease-in-out, opacity 300ms ease-in-out;
   transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
   -webkit-transform-origin: center bottom;
-  transform-origin: center bottom; }
+          transform-origin: center bottom; }
 
 .polygon--hidden {
   opacity: 0;
   -webkit-transform: scale(0);
-  transform: scale(0); }
+          transform: scale(0); }
 
 .ff .polygon {
   -webkit-transform: scale(1) !important;
-  transform: scale(1) !important; }
+          transform: scale(1) !important; }

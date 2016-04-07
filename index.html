@@ -31,9 +31,10 @@ layout: compress
         <h1>Graficos.NET - Portfolio<span>Little showcase of recent works made by Paul Melero.</span></h1>
         <p>Front-End Developer based in Zaragoza</p>
         <nav class="links">
-            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
-            <a href="#"><i class="fa fa-github fa-3x"></i></a>
-            <a href="#"><i class="fa fa-codepen fa-3x"></i></a>
+            <a href="https://twitter.com/PolloBrav0"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="https://github.com/gangsthub/"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/paulmelero"><i class="fa fa-linkedin-square fa-3x"></i></a>
+            <a href="https://codepen.io/brav0"><i class="fa fa-codepen fa-3x"></i></a>
         </nav>
     </header>
     <div class="content">
@@ -53,7 +54,7 @@ layout: compress
                             </clipPath>
                         </defs>
                         <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
-                               xlink:href="{{ post.image }}"></image>
+                               xlink:href="img/{{ post.image }}"></image>
                     </svg>
                     <div class="card__content">
                         <i class="card__btn-close fa fa-times"></i>
@@ -63,18 +64,25 @@ layout: compress
                         </div>
                         <div class="card__copy">
                             <div class="meta">
-                                <img class="meta__avatar" src="{{ post.avatar }}"/>
-                                <span class="meta__author">{{ post.author }}</span>
+                                <img class="meta__avatar" src="./img/{{ post.avatar }}"/>
+                                <span class="meta__author">Made at/by:{{ post.author }}</span>
                                 <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
                             </div>
                             {{ post.content }}
                             <div class="card__tools">
+                                <p>Some of the front-end tools I used were:</p>
                                 <ul>
                                     {% for item in post.tools %}
                                         <li class="post-tools__item">{{ item }}</li>
                                     {% endfor %}
                                 </ul>
                             </div>
+                            {% if post.siteUrl %}
+                                <div class="card__visit">
+                                    <p>You can visit the site here:</p>
+                                    <a href="{{ post.siteUrl }}" rel="nofollow" target="blank_">See the site</a>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
