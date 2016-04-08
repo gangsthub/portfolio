@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "description": "Graficos.net Portfolio",
+  "main": "gulpfile.js",
+  "authors": [
+    "Graficos.NET"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/gangsthub/portfolio",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
