@@ -75,7 +75,7 @@ gulp.task('sass', function () {
       includePaths: ['scss'],
       onError: browserSync.notify
     }))
-    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(prefix(['last 15 versions', '> 1%', 'ie 9', 'Firefox > 29'], { cascade: true }))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
