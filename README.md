@@ -1,6 +1,6 @@
 # Graficos.NET Portfolio
 
-I pretend to show some works made by myself and workingg with some others.
+I pretend to show some works made by myself and working with some others.
 
 You can see it here:
 
